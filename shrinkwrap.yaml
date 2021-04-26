@@ -1,0 +1,147 @@
+dependencies:
+  '@discordjs/opus': 0.3.3
+  akaneko: 4.5.3
+  anime-scraper: 3.1.3
+  ascii-table: 0.0.9
+  axios: 0.21.1
+  canvacord: 5.0.8
+  canvas-senpai: 0.0.2
+  chalk: 4.1.0
+  common-tags: 1.8.0
+  cpu-stat: 2.0.1
+  delay: 5.0.0
+  discord-ytdl-core: 5.0.0
+  discord.js: 12.5.1
+  discord.js-commando: 0.12.2
+  dotenv: 8.2.0
+  erela.js: 2.3.2
+  express: 4.17.1
+  ffmpeg-static: 4.2.7
+  figlet: 1.5.0
+  flip-text: 1.1.0
+  fs: 0.0.2
+  genius-lyrics-api: 3.0.6
+  got: 11.8.2
+  imdb-api: 4.4.1
+  jimp: 0.16.1
+  klasa: 0.4.0
+  lynx: 0.2.0
+  mathjs: 9.2.0
+  moment: 2.29.1
+  moment-duration-format: 2.3.2
+  mongoose: 5.11.17
+  nekos.life: 2.0.7
+  node-fetch: 2.6.1
+  novelcovid: 1.2.7
+  os: 0.1.1
+  parse-ms: 2.1.0
+  quick.db: 7.1.3
+  redis: 3.0.2
+  request-promise-native: 1.0.9
+  snekfetch: 4.0.4
+  something-random-on-discord: 0.0.1
+  srod-v2: 1.0.2
+  string-hash: 1.1.3
+  twemoji-parser: 12.1.3
+  urban-dictionary: 3.0.0
+  weather-js: 2.0.0
+  youtube-playlist: 1.0.4
+  yt-search: 2.7.3
+  ytdl-core: 4.4.5
+  ytdl-core-discord: 1.2.5
+  ytpl: 2.0.5
+  ytsr: 3.3.1
+packages:
+  /@babel/runtime/7.12.18:
+    dependencies:
+      regenerator-runtime: 0.13.7
+    dev: false
+    resolution:
+      integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
+  /@babel/runtime/7.13.10:
+    dependencies:
+      regenerator-runtime: 0.13.7
+    dev: false
+    resolution:
+      integrity: sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
+  /@canvacord/assets/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha512-76uLD27UDlfTxtgA7armbt6G9/X1NDqm/qjs9gxbWFVfcJxVdT3r3LlwaLp0NlRa5yMylCFf3WcOHufVjk60vw==
+  /@derhuerst/http-basic/8.2.1:
+    dependencies:
+      caseless: 0.12.0
+      concat-stream: 1.6.2
+      http-response-object: 3.0.2
+      parse-cache-control: 1.0.1
+    dev: false
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-Rmn7qQQulw2sxJ8qGfZ7OuqMWuhz8V+L5xnYKMF5cXVcYqmgWqlVEAme90pF7Ya8OVhxVxLmhh0rI2k6t7ITWw==
+  /@discordjs/collection/0.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-utRNxnd9kSS2qhyivo9lMlt5qgAUasH2gb7BEOn6p0efFh24gjGomHzWKMAPn2hEReOPQZCJaRKoURwRotKucQ==
+  /@discordjs/form-data/3.0.1:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.29
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-ZfFsbgEXW71Rw/6EtBdrP5VxBJy4dthyC0tpQKGKmYFImlmmrykO14Za+BiIVduwjte0jXEBlhSKf0MWbFp9Eg==
+  /@discordjs/node-pre-gyp/0.1.0:
+    dependencies:
+      detect-libc: 1.0.3
+      mkdirp: 0.5.5
+      needle: 2.6.0
+      nopt: 4.0.3
+      npm-packlist: 1.4.8
+      npmlog: 4.1.2
+      rc: 1.2.8
+      rimraf: 3.0.2
+      semver: 7.3.4
+      tar: 6.1.0
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-6u3EbK2x+j9bM3iK9/pE7BWLxOXZ1PvcsbDo3ZBdPocu95qPHj8zCVsBBk3Cao7V6o8QpwxUyJl6oVJ6T3ZgAg==
+  /@discordjs/opus/0.3.3:
+    dependencies:
+      '@discordjs/node-pre-gyp': 0.1.0
+      node-addon-api: 3.1.0
+    dev: false
+    requiresBuild: true
+    resolution:
+      integrity: sha512-n3hUs4RY0K8cz8vJ2GiZE4EdJlexoxs1vGsaft5lZlAnU6wsZfncpv4px+HVOMKN8ddtjriGfsrG4lVkAyZcmQ==
+  /@jimp/bmp/0.14.0/@jimp!custom@0.14.0:
+    dependencies:
+      '@babel/runtime': 7.12.18
+      '@jimp/custom': 0.14.0
+      '@jimp/utils': 0.14.0
+      bmp-js: 0.1.0
+    dev: false
+    id: registry.npmjs.org/@jimp/bmp/0.14.0
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-5RkX6tSS7K3K3xNEb2ygPuvyL9whjanhoaB/WmmXlJS6ub4DjTqrapu8j4qnIWmO4YYtFeTbDTXV6v9P1yMA5A==
+  /@jimp/bmp/0.16.1/@jimp!custom@0.16.1:
+    dependencies:
+      '@babel/runtime': 7.13.10
+      '@jimp/custom': 0.16.1
+      '@jimp/utils': 0.16.1
+      bmp-js: 0.1.0
+    dev: false
+    id: registry.npmjs.org/@jimp/bmp/0.16.1
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-iwyNYQeBawrdg/f24x3pQ5rEx+/GwjZcCXd3Kgc+ZUd+Ivia7sIqBsOnDaMZdKCBPlfW364ekexnlOqyVa0NWg==
+  /@jimp/core/0.14.0:
+    dependencies:
+      '@babel/runtime': 7.12.18
+   
