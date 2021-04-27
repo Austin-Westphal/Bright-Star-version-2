@@ -1,5 +1,0 @@
-### GUIDE V12 BY CTK
-
-___
-
-10 July => HELP COMMAND
