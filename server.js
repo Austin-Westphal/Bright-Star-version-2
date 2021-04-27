@@ -20,7 +20,7 @@ const canva = new CanvasSenpai();
 client.on("ready", () => {
   //When bot is ready
   console.log("I am ready to go");
-  client.user.setActivity(db.get("Help | Default Prefix: +)); //It will set status :)
+  client.user.setActivity(db.get("Help | Default Prefix: +")); //It will set status :)
 });
 
 //IS URL FUNCTION - START
