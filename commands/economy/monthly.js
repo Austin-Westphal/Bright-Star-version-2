@@ -7,7 +7,7 @@ module.exports = {
         name: "monthly",
         aliases: ["month"],
         category: "economy",
-        description: "Gives You 10000 each month",
+        description: "Gives You 1750 each month",
         usage: "monthly | month",
         accessableby: "everyone"
     ,
@@ -15,7 +15,7 @@ module.exports = {
 
         let user = message.author;
         let timeout = 2592000000;
-        let amount = 10000;
+        let amount = 1750;
 
         let monthly = await db.fetch(`monthly_${user.id}`);
 
