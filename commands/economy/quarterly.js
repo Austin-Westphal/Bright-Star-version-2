@@ -5,35 +5,35 @@ const ms = require("parse-ms");
 
 module.exports = {
     
-        name: "daily",
-        aliases: ["coins-system"],
+        name: "quarterly",
+        aliases: ["quart"],
         category: "economy",
-        description: "Gives You 750 per day",
-        usage: "daily",
+        description: "Gives You 1,750 per 3 months",
+        usage: "+quarterly",
         accessableby: "everyone"
   ,
     run: async (bot, message, args) => {
         let user = message.author;
 
-        let timeout = 86400000;
-        let amount = 750;
+        let timeout = 7889400000;
+        let amount = 1750;
 
-        let daily = await db.fetch(`daily_${user.id}`);
+        let quarterly = await db.fetch(`quarterly_${user.id}`);
 
-        if (daily !== null && timeout - (Date.now() - daily) > 0) {
-            let time = ms(timeout - (Date.now() - daily));
+        if (daily !== null && timeout - (Date.now() - quarterly) > 0) {
+            let time = ms(timeout - (Date.now() - quarterly));
 
             let timeEmbed = new MessageEmbed()
                 .setColor("GREEN")
-                .setDescription(`❌ You've already collected your daily reward\n\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
+                .setDescription(`❌ You've already collected your quarterly reward\n\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
             message.channel.send(timeEmbed)
         } else {
             let moneyEmbed = new MessageEmbed()
                 .setColor("GREEN")
-                .setDescription(`✅ You've collected your daily reward of ${amount} coins`);
+                .setDescription(`✅ You've collected your quarterly reward of ${amount} coins`);
             message.channel.send(moneyEmbed)
             db.add(`money_${user.id}`, amount)
-            db.set(`daily_${user.id}`, Date.now())
+            db.set(`quarterly_${user.id}`, Date.now())
 
 
         }
