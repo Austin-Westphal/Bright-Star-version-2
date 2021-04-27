@@ -1,11 +1,12 @@
 const Discord = require(`discord.js`);
 
 module.exports = {
-  name: `rps`,
+  name: "rps",
+  category: "games",
   cooldown: 2,
-  aliases: [`rock`, `paper`, `scissors`],
-  description: `Play Rock Paper Scissors With Me!`,
-  usage: `[selection]`,
+  aliases: ["rock", "paper", "scissors"],
+  description: "Play Rock Paper Scissors With Me!",
+  usage: "[selection]",
   execute(message, args) {
     const rpc = [`rock`, `paper`, `scissors`];
     var selection = rpc[~~(Math.random() * rpc.length)];
