@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 module.exports = {
   name: "poll",
   description: "Create a simple yes or no poll",
-  category: "utilities",
+  category: "info",
   showhelp: "true",
   run: async (bot, message, args) => {
     if (!message.member.permissions.has("ADMINISTRATOR"))
