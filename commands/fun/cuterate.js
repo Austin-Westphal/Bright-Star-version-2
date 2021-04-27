@@ -7,9 +7,8 @@ module.exports = {
     usage: 'cutrate [user]',
     category: 'fun',
     guildOnly: true,
-   run: async execute(message, args){
+   run: (client, message, args) => {
         let User = await message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase().includes() === args.join(' ').toLocaleLowerCase())
-
 
         if(!User){
             let gayrateEmbed = new Discord.MessageEmbed()
