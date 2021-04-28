@@ -17,10 +17,10 @@ module.exports = {
         let timeout = 7889400000;
         let amount = 10000;
 
-        let monthly = await db.fetch(`monthly_${user.id}`);
+        let quarterly = await db.fetch(`quarterly_${user.id}`);
 
-        if (monthly !== null && timeout - (Date.now() - monthly) > 0) {
-            let time = ms(timeout - (Date.now() - monthly));
+        if (quarterly !== null && timeout - (Date.now() - quarterly) > 0) {
+            let time = ms(timeout - (Date.now() - quarterly));
 
             let timeEmbed = new MessageEmbed()
                 .setColor("GREEN")
@@ -32,7 +32,7 @@ module.exports = {
                 .setDescription(`✅ You've collected your quarterly reward of ${amount} coins`); 
             message.channel.send(moneyEmbed)
             db.add(`money_${user.id}`, amount)
-            db.set(`monthly_${user.id}`, Date.now())
+            db.set(`quarterly_${user.id}`, Date.now())
 
 
         }
