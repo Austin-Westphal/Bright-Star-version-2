@@ -5,7 +5,7 @@ module.exports = {
   name: "suggest",
   usage: "suggest <message>",
   description: "Send your Suggestion",
-  category: "actions",
+  category: "info",
   run: (client, message, args) => {
     
     if(!args.length) {
