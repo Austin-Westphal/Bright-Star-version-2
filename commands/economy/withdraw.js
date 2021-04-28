@@ -4,10 +4,10 @@ const db = require("quick.db");
 module.exports = {
     
         name: "withdraw",
-        aliases: ["wd"],
+        aliases: ["wd", "with", "takeout"],
         category: "economy",
         description: "Withdraws Money From Bank",
-        usage: "withdraw amount | wd amount",
+        usage: "withdraw amount | wd amount | with amount | takeout amount",
     
     run: async (bot, message, args) => {
         let user = message.author;
