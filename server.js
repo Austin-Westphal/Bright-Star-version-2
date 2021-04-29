@@ -20,7 +20,7 @@ const canva = new CanvasSenpai();
 client.on("ready", () => {
   //When bot is ready
   console.log("I am ready to go");
-  client.user.setActivity(db.get("Help | Default Prefix: +")); //It will set status :)
+  client.user.setActivity(db.get("status")); //It will set status :)
 });
 
 //IS URL FUNCTION - START
@@ -47,32 +47,23 @@ client.on("message", async message => {
 
   
   if(!message.member.hasPermission("ADMINISTRATOR")) {
-    
+ 
 //     if(is_url(message.content) === true) {
 //       message.delete()
 //       return message.channel.send("You can not send link here :/")
 //     }
-    
-    
-    
-    
-    
 //     let confirm = false;
 //     //NOW WE WILL USE FOR LOOP
 //     var i;
 //     for(i = 0;i < badwords.length; i++) {
-      
 //       if(message.content.toLowerCase().includes(badwords[i].toLowerCase()))
 //         confirm = true;
-      
 //     }
-    
 //     if(confirm) {
 //       message.delete()
 //       return message.channel.send("You are not allowed to send badwords here")
 //     }    
-    
-    
+  
   }
   
   //END
