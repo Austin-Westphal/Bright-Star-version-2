@@ -20,11 +20,16 @@ let questions = [
     options: ["2020", "2016", "1999", "2015"],
     correct: 2,
   },
+  {
+    title: "What genre of music does Trust In God (Austin Westphal is the real name) produce",
+    options: ["Rap", "Christian", "Pop", "Dubstep"],
+    correct: 2,
+  },
 ];
 module.exports = {
   name: "trivia",
   description: "Test your knowledge!",
-  category: "games",
+  category: "fun",
   run: async (bot, message, args) => {
     let q = questions[Math.floor(Math.random() * questions.length)];
     let i = 0;
