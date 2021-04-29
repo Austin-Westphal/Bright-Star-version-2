@@ -17,10 +17,17 @@ const canva = new CanvasSenpai();
   require(`./handlers/${handler}`)(client);
 });
 
-client.on("ready", () => {
-  //When bot is ready
-  console.log("I am ready to go");
-  client.user.setActivity(db.get("status")); //It will set status :)
+// client.on("ready", () => {
+//   //When bot is ready
+//   console.log("I am ready to go");
+//   client.user.setActivity(db.get("status")); //It will set status :)
+// });
+
+client.on('ready', () => {
+  if (client.shard.id == 0)
+      console.log(`-- ${moment().utc().format('MMMM Do')}, ${moment().utc().format('hh:mm a')} --`);
+
+  console.log(`Shard ${client.shard.id} ready!`);
 });
 
 //IS URL FUNCTION - START
